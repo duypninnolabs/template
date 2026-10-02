@@ -1,0 +1,160 @@
+<style>
+  .osu-service-benefits {
+    width: 100%;
+    background: #f5faf8;
+    padding: 20px 24px;
+  }
+
+  .osu-service-benefits__inner {
+    max-width: 1320px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+  }
+
+  .osu-benefit {
+    display: flex;
+    align-items: center;
+    gap: 17px;
+    padding: 0 28px;
+    border-right: 1px solid #d8e4df;
+  }
+
+  .osu-benefit:first-child {
+    padding-left: 0;
+  }
+
+  .osu-benefit:last-child {
+    padding-right: 0;
+    border-right: 0;
+  }
+
+  .osu-benefit__icon {
+    width: 43px;
+    height: 43px;
+    flex: 0 0 43px;
+    color: #087548;
+  }
+
+  .osu-benefit__title,
+  .osu-benefit__description {
+    display: block;
+    color: #19684b;
+    white-space: nowrap;
+  }
+
+  .osu-benefit__title {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.35;
+  }
+
+  .osu-benefit__description {
+    margin-top: 2px;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 1.35;
+  }
+
+  @media (max-width: 1050px) {
+    .osu-service-benefits__inner {
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px 0;
+    }
+
+    .osu-benefit {
+      padding: 0 18px;
+    }
+
+    .osu-benefit:nth-child(3) {
+      border-right: 0;
+    }
+
+    .osu-benefit:nth-child(4) {
+      padding-left: 0;
+    }
+  }
+
+  @media (max-width: 650px) {
+    .osu-service-benefits {
+      padding: 20px;
+    }
+
+    .osu-service-benefits__inner {
+      grid-template-columns: 1fr;
+      gap: 17px;
+    }
+
+    .osu-benefit {
+      padding: 0 0 17px;
+      border-right: 0;
+      border-bottom: 1px solid #d8e4df;
+    }
+
+    .osu-benefit:last-child {
+      padding-bottom: 0;
+      border-bottom: 0;
+    }
+  }
+</style>
+
+<section class="osu-service-benefits">
+  <div class="osu-service-benefits__inner">
+
+    <div class="osu-benefit">
+      <svg class="osu-benefit__icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M4 10h25v21H4z"/>
+        <path d="M29 17h8l7 8v6H29z"/>
+        <path d="M8 15H2M8 21H3M17 10V5h7v5M11 36a4 4 0 1 0 0-8 4 4 0 0 0 0 8ZM35 36a4 4 0 1 0 0-8 4 4 0 0 0 0 8Z"/>
+      </svg>
+      <div>
+        <span class="osu-benefit__title">Giao hàng nhanh</span>
+        <span class="osu-benefit__description">Trong 2–4 giờ</span>
+      </div>
+    </div>
+
+    <div class="osu-benefit">
+      <svg class="osu-benefit__icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M24 4 40 10v11c0 10-6.8 18-16 22-9.2-4-16-12-16-22V10z"/>
+        <path d="m16 24 5 5 11-12"/>
+      </svg>
+      <div>
+        <span class="osu-benefit__title">Thực phẩm an toàn</span>
+        <span class="osu-benefit__description">Nguồn gốc rõ ràng</span>
+      </div>
+    </div>
+
+    <div class="osu-benefit">
+      <svg class="osu-benefit__icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M8 26v-4a16 16 0 0 1 32 0v4"/>
+        <path d="M8 25H5v11h7V25ZM40 25h3v11h-7V25ZM36 40c-3 3-7 4-12 4h-3"/>
+      </svg>
+      <div>
+        <span class="osu-benefit__title">Hỗ trợ tận tâm</span>
+        <span class="osu-benefit__description">Tư vấn 24/7</span>
+      </div>
+    </div>
+
+    <div class="osu-benefit">
+      <svg class="osu-benefit__icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+        <rect x="6" y="10" width="36" height="28" rx="2"/>
+        <path d="M6 18h36M15 29h8"/>
+      </svg>
+      <div>
+        <span class="osu-benefit__title">Thanh toán linh hoạt</span>
+        <span class="osu-benefit__description">Nhiều phương thức</span>
+      </div>
+    </div>
+
+    <div class="osu-benefit">
+      <svg class="osu-benefit__icon" viewBox="0 0 48 48" fill="currentColor">
+        <path d="M42.6 4C27.6 5.1 17.7 10.5 12.1 20.2 7.2 28.7 7 38.2 7 42c4.1.1 13.2-.2 21.3-5.3C38 30.5 42.8 19.5 42.6 4Zm-26.1 33.6c3.4-7.6 9.6-14.4 18.1-19.4-7.1 5.6-12.1 12.1-15.1 19.8l-3-.4Z"/>
+      </svg>
+      <div>
+        <span class="osu-benefit__title">Ưu đãi thành viên</span>
+        <span class="osu-benefit__description">Tích điểm đổi quà</span>
+      </div>
+    </div>
+
+  </div>
+</section>
